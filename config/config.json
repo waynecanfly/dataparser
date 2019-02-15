@@ -1,0 +1,61 @@
+{
+  "location": {
+    "pdf_source": "/PDFdata/opd/pdf/pdf_source",
+    "pdf_line": "/PDFdata/opd/pdf/pdf_line",
+    "pdf_block": "/PDFdata/opd/pdf/pdf_block",
+    "pdf_block_noline": "/PDFdata/opd/pdf/pdf_block_noline",
+    "pdf_structure": "/PDFdata/opd/pdf/pdf_structure",
+    "pdf_table": "/PDFdata/opd/pdf/pdf_table",
+    "pdf_table_alone": "/PDFdata/opd/pdf/pdf_table_alone",
+    "pdf_table_new": "/PDFdata/opd/pdf/pdf_table_new",
+    "pdf_push": "/PDFdata/opd/pdf/pdf_push",
+    "pdf_push_check": "/PDFdata/opd/pdf/pdf_push_check",
+    "hdfs_dir": "/pdf",
+    "pdf_merge": "/PDFdata/merge"
+  },
+  "location_liu": {
+    "pdf_source": "Z:/opd/pdf/pdf_source",
+    "pdf_line": "Z:/opd/pdf/pdf_line",
+    "pdf_block": "Z:/opd/pdf/pdf_block",
+    "pdf_table": "Z:/opd/pdf/pdf_table",
+    "pdf_table_alone": "Z:/opd/pdf/pdf_table_alone",
+    "pdf_push": "Z:/opd/pdf/pdf_push",
+    "pdf_push_check": "Z:/opd/pdf/pdf_push_check",
+    "hdfs_dir": "/pdf",
+    "pdf_merge": "Z:/merge"
+  },
+  "html_location": {
+    "opd_source_html": "/PDFdata/opd/html/opd_source_html",
+    "html_push": "/PDFdata/opd/html/html_push"
+  },
+  "database": {
+    "pdfparser": {
+      "name": "pdfparse_lib",
+      "ip": "10.100.4.77",
+      "user": "root",
+      "password": "Origin123_"
+    },
+    "common": {
+      "name": "opd_common",
+      "ip": "10.100.4.99",
+      "user": "originp",
+      "password": "originp"
+    },
+    "opd_fdss": {
+      "name": "opd_fdss",
+      "ip": "10.100.4.88",
+      "user": "u_opd_fdss",
+      "password": "u_opd_fdss"
+    },
+    "opd_fdss_test": {
+      "name": "opd_fdss_test",
+      "ip": "10.100.4.88",
+      "user": "u_opd_fdss",
+      "password": "u_opd_fdss"
+    }
+  },
+  "table": {
+    "status": "opd_pdf_status"
+  },
+  "isTest": "False"
+}

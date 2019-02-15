@@ -1,0 +1,21 @@
+/*
+ 字段说明：
+ entrance: 算法入口
+ name": "", 算法名称。取值：英文，数字，下划线
+ algorithmtype: 算法有两种类型，数据驱动型，时间驱动型。相应的取值：data_driven, time_driven
+                数据驱动型由：filetype、status、datamark、language、country共同决定需要处理什么数据；
+                时间驱动型由period字段决定什么时候执行
+
+ doc_type: 标识数据驱动型算法需要处理的数据文件类型，取值与opd_pdf_status(此表不仅仅由pdf的数据，表名以后会修改)的doc_type一致
+ statusid: 标识数据驱动型算法需要处理哪些状态的数据，取值与opd_pdf_status的statusid一致
+ datamark: 标识数据驱动型算法需要处理哪个数据集的数据，取值与opd_pdf_status的datamark一致
+ language: 标识数据驱动型算法需要处理种语言的数据，opd_pdf_status里暂时没有这个字段，所以这个字段暂时是无用的，后续有需要的话可以从index表中传递过来，或者drs提取数据时加上语言分析的功能
+ countryid:标识数据驱动型算法需要处理哪个数据集的数据，取值与opd_pdf_status的countryid一致
+ period:   控制时间驱动型算法执行的周期。取值为cron表达式
+ priority: 定义任务优先级，数字越大优先级越高
+ threadNum: 数据驱动类型任务每个处理循环所处理的数据量（多少个线程则每次处理的数据量）
+
+ 非空字段：entrance、name、algorithmtype、当algorithmtype为data_driven时statusid不能为空、当algorithmtype为time_driven时period不能为空
+
+ 特别注意： 数据驱动型任务目标数据不能出现交集，则不能让某一份数据适合交给一个以上的算法处理
+ */
